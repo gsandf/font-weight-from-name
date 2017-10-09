@@ -1,5 +1,7 @@
 # font-weight-from-name
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gsandf/font-weight-from-name.svg)](https://greenkeeper.io/)
+
 > ⚖ Get the font weight number from common names
 
 ## Usage
