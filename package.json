@@ -1,0 +1,32 @@
+{
+  "name": "font-weight-from-name",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "repository": "https://github.com/gsandf/font-weight-from-name",
+  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "license": "MIT",
+  "ava": {
+    "babel": "inherit",
+    "require": ["babel-register"]
+  },
+  "babel": {
+    "presets": ["env"]
+  },
+  "eslintConfig": {
+    "extends": "gsandf"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "eslint-config-gsandf": "^0.3.0"
+  },
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "babel src --out-dir dist --ignore *.test.js",
+    "lint": "eslint src",
+    "test": "ava"
+  }
+}
