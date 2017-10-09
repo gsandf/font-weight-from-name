@@ -8,14 +8,10 @@
   "license": "MIT",
   "ava": {
     "babel": "inherit",
-    "require": [
-      "babel-register"
-    ]
+    "require": ["babel-register"]
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "eslintConfig": {
     "extends": "gsandf"
@@ -29,7 +25,7 @@
   },
   "scripts": {
     "prepublish": "yarn build",
-    "build": "babel src --out-dir dist --ignore *.test.js",
+    "build": "rm -rf dist && babel src --out-dir dist --ignore *.test.js",
     "lint": "eslint src",
     "test": "ava"
   }
