@@ -1,6 +1,6 @@
 {
   "name": "font-weight-from-name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./src/index.js",
   "repository": "https://github.com/gsandf/font-weight-from-name",
@@ -8,10 +8,14 @@
   "license": "MIT",
   "ava": {
     "babel": "inherit",
-    "require": ["babel-register"]
+    "require": [
+      "babel-register"
+    ]
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "eslintConfig": {
     "extends": "gsandf"
